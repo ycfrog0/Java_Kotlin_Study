@@ -12,6 +12,8 @@ public class Main {
     }
 }
 ```
+파이썬과 다르게 Scanner를 사용하여 입력을 받을수 있음
+이외엔 비슷한 듯함
 # 2741
 ```java
 import java.util.Scanner;
@@ -26,6 +28,7 @@ public class Main {
     }
 }
 ```
+반복문은 C++에서 사용하는 방식과 같음
 # 2442
 ```java
 import java.util.Scanner;
@@ -41,3 +44,4 @@ public class Main {
     }
 }
 ```
+문자의 곱에서 *가 아닌 repeat을 사용함
