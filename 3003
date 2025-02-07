@@ -1,0 +1,124 @@
+```
+java
+
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class tzzt {
+    public static void main(String[] agrs) {
+        Scanner s = new Scanner(System.in);
+        ArrayList<Integer> g = new ArrayList<>();
+        String input = s.nextLine();
+        var k = 0;
+        var q = 0;
+        var l = 0;
+        var b = 0;
+        var n = 0;
+        var p = 0;
+
+        String[] kqlbnp = input.split(" ");
+        for (String kqlbnps : kqlbnp) {
+            g.add(Integer.parseInt(kqlbnps));
+        }
+        if (g.get(0) >1) {
+            while (true) {
+                g.set(0,g.get(0)-1);
+                k--;
+                if (g.get(0) == 1) {
+                    break;
+                }
+            }
+        } else if(g.get(0) <1) {
+            g.set(0,g.get(0)+1);
+            k++;
+        }
+        if (g.get(1) >1) {
+            while (true) {
+                g.set(1,g.get(1)-1);
+                q--;
+                if (g.get(1) == 1) {
+                    break;
+                }
+            }
+        } else if (g.get(1)<1) {
+            g.set(1,g.get(1)+1);
+            q++;
+        }
+        if (g.get(2) >2) {
+            while (true) {
+                g.set(2,g.get(2)-1);
+                l--;
+                if (g.get(2) == 2) {
+                    break;
+                }
+            }
+        } else if (g.get(2)<2){
+            while (true) {
+                
+            
+                g.set(2,g.get(2)+1);
+                l++;
+                if (g.get(2)==2) {
+                    break;
+                }
+            }
+        }
+        if (g.get(3) >2) {
+            while (true) {
+                g.set(3,g.get(3)-1);
+                b--;
+                if (g.get(3) == 2) {
+                    break;
+                }
+            }
+        } else if (g.get(3)<2) {
+            while (true) {
+                
+            
+                g.set(3,g.get(3)+1);
+                b++;
+                if (g.get(3)==2) {
+                    break;
+                }
+            }
+        }
+        if (g.get(4) >2) {
+            while (true) {
+                g.set(4,g.get(4)-1);
+                n--;
+                if (g.get(4) == 2) {
+                    break;
+                }
+            }
+        } else if (g.get(4)<2) {
+            while (true) {
+                g.set(4,g.get(4)+1);
+                n++;
+                if (g.get(4)==2) {
+                    break;
+                }
+            }
+        }
+        if (g.get(5) >8) {
+            while (true) {
+                g.set(5,g.get(5)-1);
+                p--;
+                if (g.get(5) == 8) {
+                    break;
+                }
+            }
+        } else if (g.get(5)<8) {
+            while (true) {
+                g.set(5,g.get(5)+1);
+                p++;
+                if (g.get(5)==8) {
+                    break;
+                }
+            }
+        }
+
+        System.out.println(k+" "+q+" "+l+" "+b+" "+n+" "+p);
+    }
+}
+```
